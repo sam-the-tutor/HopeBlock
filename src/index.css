@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 0;
+  /* background-color: #11131f; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px 50px 20px 50px;
+  background-image: url("https: //cdn.discordapp.com/attachments/950584476658962473/1200575122206101584/24301074482_b3feb1719d_z.jpg?ex=65c6adb6&is=65b438b6&hm=bf9ba48319e60761380ed6469547aad50bdee4960151f4ccf2be548aff63098f&");
+}
