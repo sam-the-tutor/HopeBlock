@@ -33,7 +33,7 @@ const Sidebar = () => {
         <div className="flex items-center p-2 gap-4 hover:bg-yellow-500">
           <FaPeopleLine className="mt-1" />
 
-          <Link to="./prisoners">Orphans</Link>
+          <Link to="./orphans">Orphans</Link>
         </div>
 
         <div className="flex items-center p-2 gap-4 hover:bg-yellow-500">
@@ -42,7 +42,7 @@ const Sidebar = () => {
         </div>
         <div className="flex items-center p-2 gap-4 hover:bg-yellow-500">
           <FaDonate />
-          <Link to="./donations">My Projects</Link>
+          <Link to="./myprojects">My Projects</Link>
         </div>
 
         <div className="flex mt-10">

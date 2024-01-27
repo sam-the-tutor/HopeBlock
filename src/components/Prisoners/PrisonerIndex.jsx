@@ -95,7 +95,7 @@ const PrisonerIndex = () => {
             )
           })
         ) : (
-          <div>NO Data at the moment</div>
+          <div>No Data at the moment</div>
         )}
 
         {/* {allPrisonerData ? (

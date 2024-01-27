@@ -17,12 +17,12 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedDashboard />}>
           <Route index element={<Index />} />
-          <Route path="prisoners" element={<PrisonerIndex />} />
-          <Route path="prisoners/:prisonerid" element={<PrisonerViewIndex />} />
+          <Route path="orphans" element={<PrisonerIndex />} />
+          <Route path="orphans/:prisonerid" element={<PrisonerViewIndex />} />
           <Route path="fundraise" element={<FundraiseIndex />} />
           <Route path="fundraise/:projectid" element={<ProjectViewIndex />} />
 
-          <Route path="donations" element={<Donations />} />
+          <Route path="myprojects" element={<Donations />} />
         </Route>
       </Routes>
     </>
