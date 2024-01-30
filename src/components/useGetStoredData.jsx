@@ -24,12 +24,11 @@ const useGetStoredData = () => {
     try {
       //get the total number of prisoners stored in the contract
       const totalNumber = Number(await RealContract.getprisonersLength())
-      console.log("number of prisoners :", totalNumber)
 
       for (let index = 0; index < totalNumber; index++) {
         //fetch the individual prisoners
         const results = await RealContract.readPrisoner(index)
-        console.log("prisoner :", results)
+
         const DataValues = Object.values(results)
         totalPrisoners.push({
           address: DataValues[0],
@@ -141,14 +140,12 @@ const useGetStoredData = () => {
           signer
         )
 
-        console.log("prison contract :", PrisonContract)
-
         loadPrisonersData(PrisonContract)
         loadFundraisingProjects(PrisonContract)
         await queryClient.setQueryData(["tokenContract"], TokenContract)
         await queryClient.setQueryData(["contractObject"], PrisonContract)
         await queryClient.setQueryData(["userEthAddress"], accounts[0])
-        navigate("/prisoners")
+        navigate("/orphans")
       })
       .catch((err) => console.log(err))
   }

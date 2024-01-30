@@ -143,7 +143,7 @@ function NewPrisonerModal() {
                 {({ isSubmitting }) => (
                   <Form className="flex  p-6 flex-col gap-4 w-3/4 justify-center items-center text-black">
                     <h1 className="mt-2 text-white border-b-2 gap-4  pb-1 flex w-full justify-center items-center text-xl">
-                      <span>New Prisoner Details</span>
+                      <span>New Entry Details</span>
                     </h1>
                     <div className="flex-col gap-1 w-full">
                       <Field
